@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-100 antialiased;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.markdown-body {
+  @apply leading-6;
+}
+
+.markdown-body p {
+  @apply my-2;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  @apply my-2 ml-5;
+}
+
+.markdown-body li {
+  @apply my-1;
+}
+
+.markdown-body a {
+  @apply text-blue-400 underline underline-offset-2;
+}
+
+.markdown-body code:not(pre code) {
+  @apply rounded bg-zinc-900 px-1.5 py-0.5 text-xs text-zinc-200;
+}
+
+.markdown-body pre {
+  @apply my-3 overflow-x-auto rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-xs;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+  @apply mt-3 mb-2 font-semibold text-zinc-100;
+}
+
+.dot-delay-150 {
+  animation-delay: 150ms;
+}
+
+.dot-delay-300 {
+  animation-delay: 300ms;
+}
